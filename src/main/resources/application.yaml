@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/flight-bin
+    username: skyq_qms
+    password: skyq_qms
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
