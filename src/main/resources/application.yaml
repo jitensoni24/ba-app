@@ -1,4 +1,9 @@
 spring:
+  security:
+    user:
+      name: bins
+      password: flights
+      roles: ADMIN
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/flight-bin
@@ -8,3 +13,7 @@ spring:
     hibernate.ddl-auto: update
     generate-ddl: true
     show-sql: true
+
+server:
+  servlet:
+    context-path: /api
